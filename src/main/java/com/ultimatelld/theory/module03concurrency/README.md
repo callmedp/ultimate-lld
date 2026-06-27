@@ -4,7 +4,7 @@
 object pooling, optimistic vs. pessimistic locking, and a side-by-side broken/correct inventory
 service that demonstrates a real race condition and its fix.
 
-Full theory: [`docs/module-03-concurrency.md`](../../../../../../docs/module-03-concurrency.md)
+Full theory: [`docs/module-03-concurrency.md`](../../../../../../../docs/module-03-concurrency.md)
 
 Run it:
 ```bash

@@ -4,7 +4,7 @@
 Driver) reused by every later scenario, demonstrating SOLID principles and rich-vs-anemic
 domain modeling on a simple Order domain.
 
-Full theory: [`docs/module-01-solid.md`](../../../../../../docs/module-01-solid.md)
+Full theory: [`docs/module-01-solid.md`](../../../../../../../docs/module-01-solid.md)
 
 Run it:
 ```bash

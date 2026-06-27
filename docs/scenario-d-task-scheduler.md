@@ -1,6 +1,6 @@
 # Scenario D — Task Scheduler / Job Queue System
 
-Code: `src/main/java/com/ultimatelld/scenariod/`
+Code: `src/main/java/com/ultimatelld/problems/taskscheduler/`
 Run: `./gradlew run -Pdriver=com.ultimatelld.problems.taskscheduler.driver.Driver`
 
 ## 1. Problem & SDE-3 constraints

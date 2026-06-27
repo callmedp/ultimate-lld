@@ -54,7 +54,10 @@ ultimate-lld/
         ├── ratelimiter/           # Distributed rate limiter / throttling
         ├── parkinglot/            # High-throughput parking lot
         ├── taskscheduler/         # Task scheduler / job queue
-        └── pubsub/                # In-memory pub-sub messaging
+        ├── pubsub/                # In-memory pub-sub messaging
+        ├── lrucache/              # Thread-safe LRU/LFU cache
+        ├── elevator/              # Multi-car elevator system
+        └── splitwise/             # Expense sharing
 ```
 
 Each leaf package follows the same internal layout: `entity/ repository/ strategy/ service/
@@ -85,5 +88,11 @@ below has been compiled and executed; the verified output is summarized in its d
   `./gradlew run -Pdriver=com.ultimatelld.problems.taskscheduler.driver.Driver`
 - [x] **Scenario E** — In-Memory Pub-Sub Messaging  ·  [docs](docs/scenario-e-pubsub.md)
   `./gradlew run -Pdriver=com.ultimatelld.problems.pubsub.driver.Driver`
+- [x] **Problem F** — Thread-Safe LRU/LFU Cache  ·  [docs](docs/problem-f-lru-cache.md)
+  `./gradlew run -Pdriver=com.ultimatelld.problems.lrucache.driver.Driver`
+- [x] **Problem G** — Multi-Car Elevator System  ·  [docs](docs/problem-g-elevator.md)
+  `./gradlew run -Pdriver=com.ultimatelld.problems.elevator.driver.Driver`
+- [x] **Problem H** — Expense Sharing (Splitwise)  ·  [docs](docs/problem-h-splitwise.md)
+  `./gradlew run -Pdriver=com.ultimatelld.problems.splitwise.driver.Driver`
 
 See [`docs/00-curriculum-outline.md`](docs/00-curriculum-outline.md) for the full map.

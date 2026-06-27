@@ -3,7 +3,7 @@
 > Goal: recognize which Gang-of-Four pattern a problem is *asking for*, implement it the
 > idiomatic Java way, and know the one failure mode an interviewer probes for.
 
-Runnable code for this module: `src/main/java/com/ultimatelld/module02patterns/`
+Runnable code for this module: `src/main/java/com/ultimatelld/theory/module02patterns/`
 Run it: `./gradlew run -Pdriver=com.ultimatelld.theory.module02patterns.driver.Driver`
 
 Every pattern below is wired and exercised by the `driver/Driver` composition root, including

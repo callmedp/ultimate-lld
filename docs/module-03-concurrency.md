@@ -1,6 +1,6 @@
 # Module 3 — SDE-3 Concurrency & State Management
 
-Runnable code: `src/main/java/com/ultimatelld/module03concurrency/`
+Runnable code: `src/main/java/com/ultimatelld/theory/module03concurrency/`
 Run it: `./gradlew run -Pdriver=com.ultimatelld.theory.module03concurrency.driver.Driver`
 
 This module is the toolbox the Section 2 problems draw on. Verified driver output:

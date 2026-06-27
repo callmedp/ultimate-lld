@@ -4,7 +4,7 @@
 eight core Gang-of-Four patterns most asked about in SDE-3 LLD interviews. Every pattern is
 real, runnable code (no stubs), wired and exercised by `driver/Driver`.
 
-Full theory + Mermaid diagrams + pitfalls: [`docs/module-02-patterns.md`](../../../../../../docs/module-02-patterns.md)
+Full theory + Mermaid diagrams + pitfalls: [`docs/module-02-patterns.md`](../../../../../../../docs/module-02-patterns.md)
 
 Run it:
 ```bash

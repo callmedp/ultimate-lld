@@ -1,6 +1,6 @@
 # Scenario C — High-Throughput Parking Lot System
 
-Code: `src/main/java/com/ultimatelld/scenarioc/`
+Code: `src/main/java/com/ultimatelld/problems/parkinglot/`
 Run: `./gradlew run -Pdriver=com.ultimatelld.problems.parkinglot.driver.Driver`
 
 ## 1. Problem & SDE-3 constraints

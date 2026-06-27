@@ -3,7 +3,7 @@
 **What this package is:** A parking lot supporting multiple vehicle/spot sizes, pluggable
 spot-allocation and fee strategies, and concurrent entry/exit.
 
-Full walkthrough: [`docs/scenario-c-parking-lot.md`](../../../../../../docs/scenario-c-parking-lot.md)
+Full walkthrough: [`docs/scenario-c-parking-lot.md`](../../../../../../../docs/scenario-c-parking-lot.md)
 
 Run it:
 ```bash

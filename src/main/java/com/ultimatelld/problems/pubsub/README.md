@@ -3,7 +3,7 @@
 **What this package is:** An in-memory publish/subscribe message broker with topics, partitions,
 consumer groups, and per-group offset tracking.
 
-Full walkthrough: `docs/scenario-e-pub-sub.md` (if present)
+Full walkthrough: [`docs/scenario-e-pubsub.md`](../../../../../../../docs/scenario-e-pubsub.md)
 
 Run it:
 ```bash

@@ -7,9 +7,9 @@ interviews. Framework-agnostic — pure OOD, SOLID, GoF patterns, and DDD.
 
 | Module | Focus | Key Deliverables | Code package |
 |--------|-------|------------------|--------------|
-| **1. Advanced OOP & SOLID** | LLD-specific violations + remedies per principle; rich vs. anemic domain models | Per-principle "smell → fix" pairs, encapsulation deep-dive, layering skeleton | `module01solid` |
-| **2. Core Design Patterns** | Creational (Factory, Builder, thread-safe Singleton), Structural (Decorator, Facade), Behavioral (Strategy, Observer, State) | One canonical, framework-agnostic implementation per pattern | `module02patterns` |
-| **3. SDE-3 Concurrency & State** | Thread-safe singletons, object pools, optimistic vs. pessimistic locking in-memory, race conditions in booking/inventory | Lock strategy decision matrix, CAS vs. lock examples | `module03concurrency` |
+| **1. Advanced OOP & SOLID** | LLD-specific violations + remedies per principle; rich vs. anemic domain models | Per-principle "smell → fix" pairs, encapsulation deep-dive, layering skeleton | `theory.module01solid` |
+| **2. Core Design Patterns** | Creational (Factory, Builder, thread-safe Singleton), Structural (Decorator, Facade), Behavioral (Strategy, Observer, State) | One canonical, framework-agnostic implementation per pattern | `theory.module02patterns` |
+| **3. SDE-3 Concurrency & State** | Thread-safe singletons, object pools, optimistic vs. pessimistic locking in-memory, race conditions in booking/inventory | Lock strategy decision matrix, CAS vs. lock examples | `theory.module03concurrency` |
 
 ## Section 2 — SDE-3 Elite Interview Question Bank
 
@@ -20,17 +20,22 @@ Each problem follows a 5-part rubric:
 4. Core Production Skeleton Code (fully implemented — no stub comments in core logic)
 5. Edge Case Analysis (race conditions, fault isolation, partial failures)
 
-| Scenario | Problem | Concurrency emphasis |
-|----------|---------|----------------------|
-| **A** | Concurrent Movie Ticket Booking | Exact-moment seat locking, booking timeouts, race conditions |
-| **B** | Distributed Rate Limiter / Throttling | Token Bucket / Leaky Bucket, thread-safe counters |
-| **C** | High-Throughput Parking Lot | Vehicle types, pluggable allocation strategies, concurrent entry/exit |
-| **D** | Task Scheduler / Job Queue | Worker pools, delayed execution, priority-based execution |
-| **E** | In-Memory Pub-Sub Messaging | Topic partitions, consumer-group offsets, delivery guarantees |
+| # | Problem | Concurrency emphasis | Code package |
+|---|---------|----------------------|--------------|
+| **A** | Concurrent Movie Ticket Booking | Exact-moment seat locking, booking timeouts, race conditions | `problems.moviebooking` |
+| **B** | Distributed Rate Limiter / Throttling | Token Bucket / Leaky Bucket, thread-safe counters | `problems.ratelimiter` |
+| **C** | High-Throughput Parking Lot | Vehicle types, pluggable allocation strategies, concurrent entry/exit | `problems.parkinglot` |
+| **D** | Task Scheduler / Job Queue | Worker pools, delayed execution, priority-based execution | `problems.taskscheduler` |
+| **E** | In-Memory Pub-Sub Messaging | Topic partitions, consumer-group offsets, delivery guarantees | `problems.pubsub` |
+| **F** | Thread-Safe LRU/LFU Cache | O(1) get/put, single-lock atomicity, pluggable eviction (OCP) | `problems.lrucache` |
+| **G** | Multi-Car Elevator System | Per-car locks, LOOK algorithm, pluggable dispatch | `problems.elevator` |
+| **H** | Expense Sharing (Splitwise) | Split strategies, thread-safe ledger, min-cash-flow settlement | `problems.splitwise` |
 
 ## How to navigate
 
-- Theory and walkthroughs live in `docs/`, one Markdown file per module/scenario.
-- Runnable code lives under `src/main/java/com/ultimatelld/`, one package per module/scenario.
+- Theory and walkthroughs live in `docs/`, one Markdown file per module/problem.
+- Runnable code lives under `src/main/java/com/ultimatelld/`, split into two groups:
+  **`theory.*`** (Section 1 modules) and **`problems.*`** (Section 2 question bank).
 - Every package ships a `driver/Driver.java` you can run with
-  `./gradlew run -Pdriver=<fully.qualified.Driver>`.
+  `./gradlew run -Pdriver=<fully.qualified.Driver>`, e.g.
+  `./gradlew run -Pdriver=com.ultimatelld.problems.moviebooking.driver.Driver`.

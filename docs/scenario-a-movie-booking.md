@@ -1,6 +1,6 @@
 # Scenario A — Concurrent Movie Ticket Booking System
 
-Code: `src/main/java/com/ultimatelld/scenarioa/`
+Code: `src/main/java/com/ultimatelld/problems/moviebooking/`
 Run: `./gradlew run -Pdriver=com.ultimatelld.problems.moviebooking.driver.Driver`
 
 ## 1. Problem & SDE-3 constraints

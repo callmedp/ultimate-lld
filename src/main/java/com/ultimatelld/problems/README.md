@@ -13,6 +13,9 @@ Each folder is named after the problem it solves:
 | `parkinglot` | **High-Throughput Parking Lot** | Pluggable allocation/fee strategies, concurrent entry/exit. | [docs/scenario-c-parking-lot.md](../../../../../../docs/scenario-c-parking-lot.md) |
 | `taskscheduler` | **Task Scheduler / Job Queue** | Worker pools, priority + delayed execution, retry policy. | [docs/scenario-d-task-scheduler.md](../../../../../../docs/scenario-d-task-scheduler.md) |
 | `pubsub` | **In-Memory Pub-Sub Messaging** | Topic partitions, consumer-group offsets, delivery guarantees. | [docs/scenario-e-pubsub.md](../../../../../../docs/scenario-e-pubsub.md) |
+| `lrucache` | **Thread-Safe LRU/LFU Cache** | O(1) get/put, single-lock atomicity, pluggable eviction (OCP). | [docs/problem-f-lru-cache.md](../../../../../../docs/problem-f-lru-cache.md) |
+| `elevator` | **Multi-Car Elevator System** | Per-car locks, LOOK algorithm, pluggable dispatch, concurrent calls. | [docs/problem-g-elevator.md](../../../../../../docs/problem-g-elevator.md) |
+| `splitwise` | **Expense Sharing (Splitwise)** | Split strategies, thread-safe ledger, min-cash-flow settlement. | [docs/problem-h-splitwise.md](../../../../../../docs/problem-h-splitwise.md) |
 
 Each problem ships a `driver/Driver` you can run:
 ```bash

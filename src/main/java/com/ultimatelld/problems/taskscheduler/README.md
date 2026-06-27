@@ -3,7 +3,7 @@
 **What this package is:** A job scheduler with worker pools, priority-based and delayed
 execution, and a retry policy for failed jobs.
 
-Full walkthrough: [`docs/scenario-d-task-scheduler.md`](../../../../../../docs/scenario-d-task-scheduler.md)
+Full walkthrough: [`docs/scenario-d-task-scheduler.md`](../../../../../../../docs/scenario-d-task-scheduler.md)
 
 Run it:
 ```bash

@@ -3,7 +3,7 @@
 > Goal: not to recite definitions, but to recognize the *specific shapes* SOLID violations
 > take in an LLD interview, and to make the remedy a reflex.
 
-Runnable code for this module: `src/main/java/com/ultimatelld/module01solid/`
+Runnable code for this module: `src/main/java/com/ultimatelld/theory/module01solid/`
 Run it: `./gradlew run -Pdriver=com.ultimatelld.theory.module01solid.driver.Driver`
 
 ---

@@ -3,7 +3,7 @@
 **What this package is:** A thread-safe rate limiter with pluggable algorithms (Token Bucket,
 Leaky Bucket) and a throttling middleware that uses it to admit or reject requests.
 
-Full walkthrough: [`docs/scenario-b-rate-limiter.md`](../../../../../../docs/scenario-b-rate-limiter.md)
+Full walkthrough: [`docs/scenario-b-rate-limiter.md`](../../../../../../../docs/scenario-b-rate-limiter.md)
 
 Run it:
 ```bash

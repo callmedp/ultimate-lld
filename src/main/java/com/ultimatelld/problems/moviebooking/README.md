@@ -4,7 +4,7 @@
 locking** under concurrency — two users must never book the same seat, holds must expire, and
 payment failures must release the seat.
 
-Full walkthrough: [`docs/scenario-a-movie-booking.md`](../../../../../../docs/scenario-a-movie-booking.md)
+Full walkthrough: [`docs/scenario-a-movie-booking.md`](../../../../../../../docs/scenario-a-movie-booking.md)
 
 Run it:
 ```bash

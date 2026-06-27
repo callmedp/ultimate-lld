@@ -1,6 +1,6 @@
 # Scenario E — In-Memory Pub-Sub Messaging System
 
-Code: `src/main/java/com/ultimatelld/scenarioe/`
+Code: `src/main/java/com/ultimatelld/problems/pubsub/`
 Run: `./gradlew run -Pdriver=com.ultimatelld.problems.pubsub.driver.Driver`
 
 ## 1. Problem & SDE-3 constraints

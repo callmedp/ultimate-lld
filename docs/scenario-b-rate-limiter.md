@@ -1,6 +1,6 @@
 # Scenario B — Distributed Rate Limiter / Throttling Middleware
 
-Code: `src/main/java/com/ultimatelld/scenariob/`
+Code: `src/main/java/com/ultimatelld/problems/ratelimiter/`
 Run: `./gradlew run -Pdriver=com.ultimatelld.problems.ratelimiter.driver.Driver`
 
 ## 1. Problem & SDE-3 constraints
