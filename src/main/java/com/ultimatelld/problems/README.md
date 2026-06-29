@@ -16,6 +16,11 @@ Each folder is named after the problem it solves:
 | `lrucache` | **Thread-Safe LRU/LFU Cache** | O(1) get/put, single-lock atomicity, pluggable eviction (OCP). | [docs/problem-f-lru-cache.md](../../../../../../docs/problem-f-lru-cache.md) |
 | `elevator` | **Multi-Car Elevator System** | Per-car locks, LOOK algorithm, pluggable dispatch, concurrent calls. | [docs/problem-g-elevator.md](../../../../../../docs/problem-g-elevator.md) |
 | `splitwise` | **Expense Sharing (Splitwise)** | Split strategies, thread-safe ledger, min-cash-flow settlement. | [docs/problem-h-splitwise.md](../../../../../../docs/problem-h-splitwise.md) |
+| `kvstore` | **Key-Value Store with TTL** | Concurrent get/put, lazy + active expiry, background reaper. | [docs/problem-i-kv-store.md](../../../../../../docs/problem-i-kv-store.md) |
+| `meetingscheduler` | **Meeting Room Scheduler** | Interval conflict detection, atomic per-room booking. | [docs/problem-j-meeting-scheduler.md](../../../../../../docs/problem-j-meeting-scheduler.md) |
+| `urlshortener` | **URL Shortener (TinyURL)** | Base-62 ids, idempotent + collision-free under concurrency. | [docs/problem-k-url-shortener.md](../../../../../../docs/problem-k-url-shortener.md) |
+| `logging` | **Logging Framework** | Levels, pluggable appenders, lossless async delivery. | [docs/problem-l-logging.md](../../../../../../docs/problem-l-logging.md) |
+| `cabbooking` | **Cab Booking (Ride Matching)** | Lock-free driver assignment (CAS), pluggable matching/fare. | [docs/problem-m-cab-booking.md](../../../../../../docs/problem-m-cab-booking.md) |
 
 Each problem ships a `driver/Driver` you can run:
 ```bash

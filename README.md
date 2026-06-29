@@ -57,7 +57,12 @@ ultimate-lld/
         ├── pubsub/                # In-memory pub-sub messaging
         ├── lrucache/              # Thread-safe LRU/LFU cache
         ├── elevator/              # Multi-car elevator system
-        └── splitwise/             # Expense sharing
+        ├── splitwise/             # Expense sharing
+        ├── kvstore/               # Key-value store with TTL (mini-Redis)
+        ├── meetingscheduler/      # Meeting room scheduler
+        ├── urlshortener/          # URL shortener (TinyURL)
+        ├── logging/               # Logging framework
+        └── cabbooking/            # Cab booking / ride matching
 ```
 
 Each leaf package follows the same internal layout: `entity/ repository/ strategy/ service/
@@ -94,5 +99,15 @@ below has been compiled and executed; the verified output is summarized in its d
   `./gradlew run -Pdriver=com.ultimatelld.problems.elevator.driver.Driver`
 - [x] **Problem H** — Expense Sharing (Splitwise)  ·  [docs](docs/problem-h-splitwise.md)
   `./gradlew run -Pdriver=com.ultimatelld.problems.splitwise.driver.Driver`
+- [x] **Problem I** — Key-Value Store with TTL  ·  [docs](docs/problem-i-kv-store.md)
+  `./gradlew run -Pdriver=com.ultimatelld.problems.kvstore.driver.Driver`
+- [x] **Problem J** — Meeting Room Scheduler  ·  [docs](docs/problem-j-meeting-scheduler.md)
+  `./gradlew run -Pdriver=com.ultimatelld.problems.meetingscheduler.driver.Driver`
+- [x] **Problem K** — URL Shortener (TinyURL)  ·  [docs](docs/problem-k-url-shortener.md)
+  `./gradlew run -Pdriver=com.ultimatelld.problems.urlshortener.driver.Driver`
+- [x] **Problem L** — Logging Framework  ·  [docs](docs/problem-l-logging.md)
+  `./gradlew run -Pdriver=com.ultimatelld.problems.logging.driver.Driver`
+- [x] **Problem M** — Cab Booking (Ride Matching)  ·  [docs](docs/problem-m-cab-booking.md)
+  `./gradlew run -Pdriver=com.ultimatelld.problems.cabbooking.driver.Driver`
 
 See [`docs/00-curriculum-outline.md`](docs/00-curriculum-outline.md) for the full map.

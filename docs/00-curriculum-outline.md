@@ -30,6 +30,11 @@ Each problem follows a 5-part rubric:
 | **F** | Thread-Safe LRU/LFU Cache | O(1) get/put, single-lock atomicity, pluggable eviction (OCP) | `problems.lrucache` |
 | **G** | Multi-Car Elevator System | Per-car locks, LOOK algorithm, pluggable dispatch | `problems.elevator` |
 | **H** | Expense Sharing (Splitwise) | Split strategies, thread-safe ledger, min-cash-flow settlement | `problems.splitwise` |
+| **I** | Key-Value Store with TTL (mini-Redis) | Concurrent get/put, lazy + active expiry, background reaper | `problems.kvstore` |
+| **J** | Meeting Room Scheduler | Interval conflict detection, atomic per-room booking | `problems.meetingscheduler` |
+| **K** | URL Shortener (TinyURL) | Base-62 ids, idempotent + collision-free shortening | `problems.urlshortener` |
+| **L** | Logging Framework | Levels, pluggable appenders, lossless async delivery | `problems.logging` |
+| **M** | Cab Booking (Ride Matching) | Lock-free driver assignment (CAS), pluggable matching/fare | `problems.cabbooking` |
 
 ## How to navigate
 
